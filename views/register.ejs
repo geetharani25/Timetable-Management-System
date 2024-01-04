@@ -1,0 +1,105 @@
+<html>
+<head>
+<style>
+    body {
+        background-color: #f5f5f5;
+        background:url("https://tse3.mm.bing.net/th?id=OIP.1VEsjGzAmUUNpyiPbcZZIwHaEo&pid=Api&P=0");
+            background-size: cover;
+            background-repeat: no-repeat;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    input, select {
+        border-radius: 5px;
+        background-color: white;
+        font-size: 16px;
+        padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        margin-bottom: 20px;
+    }
+    input:focus, select:focus {
+        box-shadow: 0 0 5px #0077cc;
+    }
+    h2 {
+        margin-top: 100px;
+        text-align: center;
+        color: #0077cc;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        text-shadow: 2px 2px #fff;
+    }
+    label {
+        font-size: 20px;
+        color: #0077cc;
+        margin-bottom: 5px;
+        display: block;
+    }
+    table {
+        border-radius: 1%;
+        background-color: #fff;
+        max-width: 500px;
+        margin: auto;
+        padding: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .s {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0077cc;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-shadow: none;
+    }
+    .s:hover {
+        background-color: #005ea8;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    .s:active {
+        transform: translateY(1px);
+        box-shadow: none;
+    }
+</style>
+</head>
+<body>
+    <form action="/register" method="post">
+        <h2>Register Here</h2>
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="section">Class Teacher For:</label></td>
+                <td>
+                    <select id="section" name="section">
+                        <option value="None">None</option>
+                        <option value="3A">3A</option>
+                        <option value="3B">3B</option>
+                        <option value="3C">3C</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" placeholder="Enter your password" required></td></tr>
+          <tr><td colspan="2" style="text-align: center;"><input class="s" type="submit" name="submit" value="Submit"></td></tr>
+</table>
+</table>
+</div>
+</form>
+</body>
+</html>
